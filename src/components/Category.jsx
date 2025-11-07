@@ -13,7 +13,7 @@ export default function Category({ setBusqueda }) {
         <button
           key={categoria}
           onClick={() => seleccionarCategoria(categoria)}
-          className="w-24 py-2 bg-slate-900 text-white rounded-lg hover:bg-gray-700 font-josefin"
+          className="w-24 py-2 bg-slate-900 text-white rounded-lg hover:bg-gray-700 font-josefin cursor-pointer"
         >
           {categoria}
         </button>
