@@ -5,7 +5,7 @@ import Spinner from './Spinner'
 export default function Gallery({ busqueda }) {
   const [fotos, setFotos] = useState([])
   const [cargando, setCargando] = useState(false)
-  const API_KEY = "k6exhiDvgLHih5LC0xzqd61uXlOUzprse27z8sMh1zoNzre88NqAjN5j"
+  const API_KEY = import.meta.env.VITE_PEXELS_KEY
 
   useEffect(() => {
     const buscarFotos = async () => {
